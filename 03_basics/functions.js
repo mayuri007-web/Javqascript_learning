@@ -13,11 +13,30 @@ function sayMyName(){
 // }
 // AddTwoNumber(6,"568")  //arguments
 
-function AddTwoNumber(number1,number2){   //parameters
-    const result =  number1 + number2
-    console.log("Mayuri")
-    return (result)
+// function AddTwoNumber(number1,number2){   //parameters
+//     const result =  number1 + number2
+//     console.log("Mayuri")
+//     return (result)
     
+// }
+// const result = AddTwoNumber(6,4)
+// console.log("Result ",result)
+
+
+function loginuserMessage (username = "Ram"){
+    if (username === undefined){
+        console.log("no one is log in")
+        return
+    }
+    return `${username} just logged in` 
+} 
+console.log (loginuserMessage ("check"))
+
+function Student(studrntname = "Manya") {
+    // if(studrntname==undefined){
+    //     console.log("please enter the name")
+    //     return
+    // }
+    return `${studrntname} is present today`;
 }
-const result = AddTwoNumber(6,4)
-console.log("Result ",result)
+console.log(Student())
